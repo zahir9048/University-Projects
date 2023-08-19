@@ -1,0 +1,482 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #2d40c954;
+}
+
+::selection {
+    background: #4158d0;
+    color: #fff;
+}
+
+.wrapper {
+    position: relative;
+    top: 18.5%;
+    width: 380px;
+    background-color: #ededed;
+    border-radius: 30px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 30px 30px 0 0;
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    background: #525252;
+}
+
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper form #field2 {
+    height: 50px;
+    width: 100%;
+    margin-top: 13px !important;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #525252;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 0%;
+    font-size: 16px;
+    color: #525252;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    transform: translateY(-50%);
+}
+
+form .content {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form .content .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .content input {
+    width: 15px;
+    height: 15px;
+    background: red;
+}
+
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin-top: 8.5%;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 2;
+    /*background-color: rgb(167, 167, 167);*/
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+/* Logo placeholder*/
+#logocontainer {
+    display: flex;
+    width: 109.28px;
+    height: 50px;
+    margin: 1.5rem 4rem 1.5rem 5rem;
+}
+
+#logocontainer a,
+#logo {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.header-nav {
+    display: flex;
+    margin: 1% 1%;
+    position: relative;
+    left: 5.8%;
+}
+
+.dropdown {
+    display: flex;
+    position: relative;
+    left: 15.6%;
+    align-items: center;
+    height: 10%;
+    margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 1.9em;
+    right: 1.1em;
+    background-color: #f1f1f1;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+
+.dropbtn {
+    padding: 7px 30px 7px 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.15rem solid transparent;
+    border-radius: 3rem;
+    background: none;
+}
+
+.bn36 {
+    border-color: #fff;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    transition: all 0.1s 0.1s;
+}
+
+.bn36:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+#softwares-btn {
+    padding: 0.7rem 1.2rem;
+}
+
+
+
+.nav-elements {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-elements:hover {
+    color: black;
+    text-decoration: none;
+}
+
+form .content label {
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+}
+
+form .content .pass-link {
+    color: "";
+}
+
+.red {
+    font-weight: 600;
+    color: firebrick;
+    display: flex;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.green {
+    font-weight: 600;
+    color: green;
+    display: flex;
+    font-size: 14px;
+    text-align: justify;
+}
+
+form .field input[type="submit"] {
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+form .signup-link {
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .pass-link a,
+form .signup-link a {
+    color: #4158d0;
+    text-decoration: none;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+#login {
+    background: #06bb06;
+}
+
+header nav ul {
+    /*portfolio,
+	abput,
+	Contact teeno centre mai aagye/ display: block;*/
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+
+
+/*footer*/
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 96px;
+    position: relative;
+    top: 22.2%;
+    padding: 15px 40px;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    overflow: hidden;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 16%;
+    width: 22%;
+    margin: 0 1% 0 2.5%;
+    padding: 0.5em 1.5em;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    height: 40px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+
+.copyrights span {
+    height: 50%;
+}
+
+.copyrights,
+.copyrights span a {
+    color: white;
+    padding: 0.2em;
+}
+
+.copyrights span a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-main-cases {
+    margin: 0% 2% 0% 2%;
+    padding: 0.8%;
+}
+
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+
+}
+
+.footer-main-links li {
+    list-style: none;
+    margin: 0.2em;
+
+}
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.footer-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.footer-h2 h2 {
+    margin: 0.2em;
+    font-size: 1.7em;
+}
+
+.footer-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45%;
+}
+
+.img-container {
+
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    margin: 0.5em 0.3em;
+
+}
+
+.yt-img,
+.tw-img,
+.fb-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+    header nav ul {
+        margin: 10px 5px 10px 20px;
+        float: left;
+    }
+
+    header nav ul li a {
+        line-height: 20px;
+
+    }
+}

@@ -1,0 +1,507 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #2d40c954;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    max-width: 450px !important;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 0 !important;
+    position: relative;
+    top: 19%;
+}
+
+
+.header1 {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 2;
+    /*background-color: rgb(167, 167, 167);*/
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+/* Logo placeholder*/
+#logocontainer {
+    display: flex;
+    width: 109.28px;
+    height: 50px;
+    margin: 1.5rem 4rem 1.5rem 5rem;
+}
+
+#logocontainer a,
+#logo {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.header-nav {
+    display: flex;
+    margin: 1% 1%;
+    position: relative;
+    left: 5.8%;
+}
+
+.dropdown {
+    display: flex;
+    position: relative;
+    left: 15.6%;
+    align-items: center;
+    height: 10%;
+    margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 1.9em;
+    right: 1.1em;
+    background-color: #f1f1f1;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+
+.dropbtn {
+    padding: 7px 30px 7px 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.15rem solid transparent;
+    border-radius: 3rem;
+    background: none;
+}
+
+.bn36 {
+    border-color: #fff;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    transition: all 0.1s 0.1s;
+}
+
+.bn36:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+#softwares-btn {
+    padding: 0.7rem 1.2rem;
+}
+
+
+
+.nav-elements {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-elements:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+header nav ul {
+    /*portfolio,
+	abput,
+	Contact teeno centre mai aagye/ display: block;*/
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+    header nav ul {
+        margin: 10px 5px 10px 20px;
+        float: left;
+    }
+
+    header nav ul li a {
+        line-height: 20px;
+
+    }
+}
+
+.content {
+    padding: 25px 30px;
+}
+
+.container .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 75px;
+    color: #fff;
+    user-select: none;
+    border-radius: 30px 30px 0 0;
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    background: #525252;
+}
+
+.content div .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+div .user-details .input-box {
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+
+
+div .input-box {
+
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+}
+
+.details {
+    width: 30%;
+    font-size: 14px;
+    margin: 5px 5px 5px 0px;
+}
+
+.user-details .input-box input {
+    height: 33px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.password-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.label-password {
+    display: flex;
+    width: 92%;
+    right: 4% !important;
+}
+
+#sure-delete {
+    margin-top: 25px;
+
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #525252;
+}
+
+div .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+div .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-around;
+}
+
+div .category label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+div .category label .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+div input[type="radio"] {
+    display: none;
+}
+
+div .button {
+    height: 45px;
+}
+
+#btn-cancel {
+    margin: 10px 0px 15px 0px;
+}
+
+#btn-del {
+    margin: 0;
+
+}
+
+div .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
+
+}
+
+div .button #del {
+    background: rgb(255 40 40);
+}
+
+div .button #cancel {
+    background: rgb(31, 134, 231);
+}
+
+div .button input:hover {
+    /* transform: scale(0.99); */
+    /*background: linear-gradient(-135deg, #71b7e6, #9b59b6);*/
+
+}
+
+@media(max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    div .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    div .category {
+        width: 100%;
+    }
+
+    .content div .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 5px;
+    }
+}
+
+@media(max-width: 459px) {
+    .container .content .category {
+        flex-direction: column;
+    }
+}
+
+
+/*footer*/
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 96px;
+    position: fixed;
+    bottom: 0;
+    padding: 15px 40px;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    overflow: hidden;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 16%;
+    width: 22%;
+    margin: 0 1% 0 2.5%;
+    padding: 0.5em 1.5em;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    height: 40px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+
+.copyrights span {
+    height: 50%;
+}
+
+.copyrights,
+.copyrights span a {
+    color: white;
+    padding: 0.2em;
+}
+
+.copyrights span a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-main-cases {
+    margin: 0% 2% 0% 2%;
+    padding: 0.8%;
+}
+
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+
+}
+
+.footer-main-links li {
+    list-style: none;
+    margin: 0.2em;
+
+}
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.footer-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.footer-h2 h2 {
+    margin: 0.2em;
+    font-size: 1.7em;
+}
+
+.footer-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45%;
+}
+
+.img-container {
+
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    margin: 0.5em 0.3em;
+
+}
+
+.yt-img,
+.tw-img,
+.fb-img {
+    width: 100%;
+    height: 100%;
+}
