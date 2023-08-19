@@ -1,0 +1,10 @@
+﻿CARCODE,CARNAME,MODEL,ENGINEDISPLACEMENT,ENGINEPOWER,FUELTYPE,GEARBOX,TRANSMISSIONTYPE,SEATINGCAPACITY,TOPSPEED,PRICE_RS
+SED-001,Corolla Grande 1.8,2021,1798 cc,138 hp @ 6400 RPM,Petrol,6 speed,Manual,5 persons,240 KM/H,3800000
+SED-002,Corolla Altis 1.6,2021,1598 cc,120 hp @ 6000 RPM,Petrol,5 speed,Automatic,5 persons,240 KM/H,3309000
+SED-003,Corolla Gli,2021,1299 cc,84 hp @ 6000 RPM,Petrol,5 speed,Manual,5 persons,240 KM/H,2770000
+SED-004,Corolla Xli,2021,1299 cc,84 hp @ 6000 RPM,Petrol,5 speed,Manual,5 persons,240 KM/H,2599000
+SED-005,Camry,2021,2362 cc,167 hp @ 6000 RPM,Petrol,5 speed,Automatic,5 persons,240 KM/H,11600000
+SED-006,Yaris,2021,1329 cc,98 hp @ 6000 RPM,Petrol,5 speed,Manual,5 persons,220 KM/H,2400000
+SED-007,Prius,2021,1798 cc,97 hp @ 5200 RPM,Hybrid,CVT,Automatic (CVT),5 persons,180 KM/H,5500000
+SED-008,Premio,2021,1496 cc,110 hp @ 6000 RPM,Petrol,5 speed,Automatic,5 persons,220 KM/H,8000000
+SED-009,Axio,2021,1496 cc,110 hp @ 6000 RPM,Petrol,5 speed,Automatic,5 persons,220 KM/H,4500000
