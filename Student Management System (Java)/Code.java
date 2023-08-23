@@ -1,10 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package studentmanagementsystem;
 import java.util.*;
-import java.lang.*;
 /**
  *
  * @author Zahir
@@ -14,7 +9,7 @@ class School {
     String[] ta={"misbah","uzma","sakeena","afshan","","","","",""};
         int tasize = ta.length;
         
-        String[] subj={"maths","urdu","chemistry","pst","","","","",""};
+    String[] subj={"maths","urdu","chemistry","pst","","","","",""};
         int subjsize = subj.length;
 }
 class teacher extends School{
@@ -157,16 +152,31 @@ class teacher extends School{
       System.out.println(ta[a+4]+" \t\t\t"+subj[a+4]);
       System.out.println(ta[a+5]+" \t\t\t"+subj[a+5]);
        }
-        
+       
     }
 
 class info{
+   
+    ArrayList<String> st = new ArrayList<String>();
+    ArrayList<Integer> str = new ArrayList<Integer>();
+    ArrayList<String> fn = new ArrayList<String>();
+    ArrayList<String> gen = new ArrayList<String>();
+    ArrayList<Integer> cs = new ArrayList<Integer>();
+    ArrayList<Integer> age = new ArrayList<Integer>();
+    
+    
+    public int returnIndex(int c){
+            int index = str.indexOf(c);
+            return index;
+    }
+    
+    
     void meth(){
      teacher obj1 = new teacher();  
-        Scanner scan = new Scanner(System.in);
+     Scanner scan = new Scanner(System.in);
      
   int a=50;
-        ArrayList<String> st = new ArrayList<String>();
+        
         st.add("waleed");   st.add("rafay");   st.add("shahmeer");  st.add("zeeshan");
         st.add("zainab");   st.add("zernab");  st.add("hussain");   st.add("abdullah");
         st.add("adnan");    st.add("nida");    st.add("musa");      st.add("jawad");
@@ -181,23 +191,23 @@ class info{
         st.add("jamshed");  st.add("faraz");   st.add("maria");     st.add("farhan");
         st.add("kamran");   st.add("zafar");
         
-         ArrayList<String> str = new ArrayList<String>();
+         
               
-        str.add("waleed(1)");    str.add("rafay(2)");    str.add("shahmeer(3)");   str.add("zeeshan(4)");
-        str.add("zainab(5)");    str.add("zernab(6)");   str.add("hussain(7)");    str.add("abdullah(8)");
-        str.add("adnan(9)");     str.add("nida(10)");    str.add("musa(11)");      str.add("jawad(12)");
-        str.add("aiman(13)");    str.add("jamal(14)");   str.add("hamza(15)");     str.add("maaz(16)");
-        str.add("inshaal(17)");  str.add("morris(18)");  str.add("hassan(19)");    str.add("usama(20)");
-        str.add("shayan(21)");   str.add("talha(22)");   str.add("taseer(23)");    str.add("sameer(24)");
-        str.add("muneeb(25)");   str.add("fatima(26)");  str.add("etezaz(27)");    str.add("raheel(28)");
-        str.add("owais(29)");    str.add("wahab(30)");   str.add("mubashir(31)");  str.add("ubaid(32)");
-        str.add("yasir(33)");    str.add("rehan(34)");   str.add("arham(35)");     str.add("nabeel(36)");
-        str.add("zaheer(37)");   str.add("sajid(38)");   str.add("fawad(39)");     str.add("masooma(40)");    
-        str.add("rida(41)");     str.add("aneesa(42)");  str.add("alina(43)");     str.add("aliza(44)");
-        str.add("jamshed(45)");  str.add("faraz(46)");   str.add("maria(47)");     str.add("farhan(48)");
-        str.add("kamran(49)");   str.add("zafar(50)");
+        str.add(1);    str.add(2);    str.add(3);   str.add(4);
+        str.add(5);    str.add(6);   str.add(7);    str.add(8);
+        str.add(9);     str.add(10);    str.add(11);      str.add(12);
+        str.add(13);    str.add(14);   str.add(15);     str.add(16);
+        str.add(17);  str.add(18);  str.add(19);    str.add(20);
+        str.add(21);   str.add(22);   str.add(23);    str.add(24);
+        str.add(25);   str.add(26);  str.add(27);    str.add(28);
+        str.add(29);    str.add(30);   str.add(31);  str.add(32);
+        str.add(33);    str.add(34);   str.add(35);     str.add(36);
+        str.add(37);   str.add(38);   str.add(39);     str.add(40);    
+        str.add(41);     str.add(42);  str.add(43);     str.add(44);
+        str.add(45);  str.add(46);   str.add(47);     str.add(48);
+        str.add(49);   str.add(50); 
         
-        ArrayList<String> fn = new ArrayList<String>();
+        
         fn.add("yasir");   fn.add("rehan");  fn.add("arham");     fn.add("nabeel");
         fn.add("zaheer");  fn.add("sajid");  fn.add("fawad");     fn.add("masoom");    
         fn.add("ahmed");   fn.add("haris");  fn.add("ali");       fn.add("ali");
@@ -212,7 +222,7 @@ class info{
         fn.add("kamil");   fn.add("jamal");  fn.add("abid");      fn.add("rashid");
         fn.add("mudasir"); fn.add("usman");
         
-        ArrayList<String> gen = new ArrayList<String>();
+        
         gen.add("M");    gen.add("M");   gen.add("M");     gen.add("M");
         gen.add("F");   gen.add("F");   gen.add("M");     gen.add("M");    
         gen.add("M");     gen.add("F");  gen.add("M");     gen.add("M");
@@ -227,7 +237,7 @@ class info{
         gen.add("M");    gen.add("M");   gen.add("F");  gen.add("M");
         gen.add("M");   gen.add("M");
         
-        ArrayList<Integer> cs = new ArrayList<Integer>();
+        
         cs.add(3);    cs.add(10);   cs.add(6);     cs.add(10);
         cs.add(7);   cs.add(5);   cs.add(6);     cs.add(1);    
         cs.add(9);     cs.add(4);  cs.add(5);     cs.add(5);
@@ -242,7 +252,7 @@ class info{
         cs.add(7);    cs.add(3);   cs.add(8);  cs.add(1);
         cs.add(10);    cs.add(5);  
         
-        ArrayList<Integer> age = new ArrayList<Integer>();
+        
         age.add(8);    age.add(15);   age.add(11);     age.add(15);
         age.add(12);    age.add(10);   age.add(11);     age.add(6);
         age.add(14);    age.add(9);   age.add(10);     age.add(10);
@@ -294,34 +304,42 @@ class info{
                 System.out.print("Enter Age: ");
                 age.add(scan.nextInt());
                 a++;
-                System.out.println("Roll No. assigned to Student is : "+a);   
+                System.out.println("Roll No. assigned to Student is : "+a);
+                str.add(a);
                 System.out.println("Student added Successfully ");
                 System.out.println("\nNow,Total No. of Students are = "+ st.size() );
                 }
                 break;  
                 
-                 case 2 : 
+            case 2 : 
                 System.out.println("\nTotal No. Of Students in School = "+ st.size() );
-                System.out.println("\nStudent Names with Roll Numbers : "+ str );
-                System.out.print("\nEnter Student name which you want to remove: ");
-                String z=scan.next();
-                st.remove(z);
-                fn.remove(z);
-                gen.remove(z);
-                cs.remove(z);
-                age.remove(z);   
+                System.out.println("\nStudents with Roll Numbers : ");
+                for(int h=0; h<st.size();h++){
+                    System.out.print(st.get(h) + "(" + str.get(h)+")"+ " "); 
+                }
+                     
+                System.out.print("\nEnter Student roll num which you want to remove: ");
+                int index = returnIndex(scan.nextInt());
+                st.remove(index);
+                str.remove(index);
+                fn.remove(index);
+                gen.remove(index);
+                cs.remove(index);
+                age.remove(index);   
                 System.out.println("Student removed Successfully. ");
                 System.out.println("\nTotal No. of Students are = "+ st.size() );
-                System.out.println("\nStudent Names = "+ st );
-                a--;
+                System.out.println("\nUpdated Student List:");
+                for(int h=0; h<st.size();h++){
+                    System.out.print(st.get(h) + "(" + str.get(h)+")"+ " "); 
+                }
                 break;  
                 
             case 3 : 
-                System.out.println("Total Roll numbers of Students: "+st.size());
+                System.out.println("Total Students: "+st.size());
                 System.out.print("Enter Roll No you want to Search: ");
-                int x=scan.nextInt();
-                int y = x-1;           
-                System.out.println("\nStudent at Roll No: "+x+" is "+st.get(y));
+                int roll_num = scan.nextInt();
+                int y = returnIndex(roll_num);         
+                System.out.println("\nStudent at Roll No: "+roll_num+" is "+st.get(y));
                 System.out.println("");
                 System.out.print("Do you want "+st.get(y)+"'s information:(type yes or no) ");
                 
@@ -331,6 +349,7 @@ class info{
 
                 if(o.equals(d) || p.equals(d)){              
                 System.out.println("\nName: "+st.get(y));
+                System.out.println("Roll Number: "+str.get(y));
                 System.out.println("Father's Name: "+fn.get(y));
                 System.out.println("Gender: "+gen.get(y));
                 System.out.println("Class: "+cs.get(y));
@@ -346,8 +365,7 @@ class info{
                 System.out.println("\nTotal No. Of Students in School = "+ st.size() );
                 System.out.println("Student Names with Roll Numbers : "+ str );
                 System.out.print("\nEnter Roll No. which you want to edit: ");
-                int c = scan.nextInt();
-                int b = c-1;
+                int b = returnIndex(scan.nextInt());
                 System.out.print("\nEnter name which you want to put: ");
                 String value1 = scan.next();
                 st.set(b,value1);
@@ -368,16 +386,18 @@ class info{
                 cs.set(b,value4);
                 age.set(b,value5);
                 
-                System.out.println("\nTyhe information has been updated.");
+                System.out.println("\nThe information has been updated.");
            
                 System.out.println("\nStudent Names : "+ st );
                 break;
                 
             case 5 : 
-                //for(int i=0;i<da.size();i++)
+                
                 System.out.println("Total number of Students: "+st.size());
-                System.out.println("Names = "+ st );
-                System.out.println("Which Stude");
+                System.out.println("Students With Rollnumbers: ");
+                for(int h=0; h<st.size();h++){
+                    System.out.print(st.get(h) + "(" + str.get(h)+")"+ " "); 
+                }
                 System.out.println("\n Father's Names of all Students = "+ fn );
                 System.out.println("\nGenders of all Students = "+ gen );
                 System.out.println("\nClasses of all Students = "+ cs );
@@ -431,8 +451,17 @@ class info{
                 else{
                 System.out.println("Ok , no problem.");    
                 }
-                break;    
-
+                break; 
+            
+            case 11:
+                int ind = 0;
+                System.out.println("\nStudent Roll Numbers : "+ str );
+                System.out.println("Enter roll num:");
+                int in = scan.nextInt();
+                ind = returnIndex(in);
+                System.out.println("Index is:" + ind);
+                break;
+                
             default: 
                 System.out.println("Wrong Entry \n ");
                 break;   
